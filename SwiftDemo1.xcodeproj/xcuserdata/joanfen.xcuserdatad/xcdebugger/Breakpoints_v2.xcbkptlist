@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftDemo1/Animation.swift"
-            timestampString = "533811446.367763"
+            timestampString = "535622909.722418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -26,7 +26,7 @@
                   moduleName = "SwiftDemo1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joanfen/Documents/2%20joanfen/code/SwiftDemo1/SwiftDemo1/Animation.swift"
-                  timestampString = "533811446.454035"
+                  timestampString = "535622909.83143"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -41,7 +41,7 @@
                   moduleName = "SwiftDemo1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joanfen/Documents/2%20joanfen/code/SwiftDemo1/SwiftDemo1/Animation.swift"
-                  timestampString = "533811446.456719"
+                  timestampString = "535622909.834645"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -65,38 +65,6 @@
             endingLineNumber = "33"
             landmarkName = "login(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SwiftDemo1.Login.login(Any) -&gt; ()"
-                  moduleName = "SwiftDemo1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joanfen/Documents/2%20joanfen/code/SwiftDemo1/SwiftDemo1/Login.swift"
-                  timestampString = "533811446.551262"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "1375">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in SwiftDemo1.Login.login(Any) -&gt; ()"
-                  moduleName = "SwiftDemo1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joanfen/Documents/2%20joanfen/code/SwiftDemo1/SwiftDemo1/Login.swift"
-                  timestampString = "533811446.554945"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "880">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
