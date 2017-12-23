@@ -15,6 +15,11 @@
 		55B318A51FEB713B00FD859F /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A41FEB713B00FD859F /* RequestConfig.swift */; };
 		55B318A71FEB9A7B00FD859F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A61FEB9A7B00FD859F /* System.swift */; };
 		55B318A91FECDF8C00FD859F /* LocalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A81FECDF8C00FD859F /* LocalConfig.swift */; };
+		55B318C31FEE3E4A00FD859F /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318BE1FEE3E2900FD859F /* FMDB.framework */; };
+		55B318C41FEE3E4A00FD859F /* FMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318BE1FEE3E2900FD859F /* FMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55B318CB1FEE4B4400FD859F /* DoctorDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318CA1FEE4B4400FD859F /* DoctorDao.swift */; };
+		55B318CE1FEE4CF100FD859F /* libFMDB-IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318BC1FEE3E2900FD859F /* libFMDB-IOS.a */; };
+		55B318F01FEE4ED300FD859F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318EF1FEE4ED300FD859F /* libsqlite3.0.tbd */; };
 		55FAAB821FA61D5A00D2BE51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAAB811FA61D5A00D2BE51 /* AppDelegate.swift */; };
 		55FAAB841FA61D5A00D2BE51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAAB831FA61D5A00D2BE51 /* ViewController.swift */; };
 		55FAAB871FA61D5A00D2BE51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FAAB851FA61D5A00D2BE51 /* Main.storyboard */; };
@@ -80,6 +85,62 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
+		55B318B51FEE3E2900FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = fmdb;
+		};
+		55B318B71FEE3E2900FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE4290EF12B42F870088BD94;
+			remoteInfo = FMDB;
+		};
+		55B318B91FEE3E2900FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF5D041618416BB2008C5AA9;
+			remoteInfo = Tests;
+		};
+		55B318BB1FEE3E2900FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6290CBB5188FE836009790F8;
+			remoteInfo = "FMDB-IOS";
+		};
+		55B318BD1FEE3E2900FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
+		55B318BF1FEE3E2900FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
+			remoteInfo = "FMDB MacOS";
+		};
+		55B318C11FEE3E2900FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CD2426D1FCC09CA00479FDE;
+			remoteInfo = "FMDB watchOS";
+		};
+		55B318C51FEE3E4B00FD859F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C73EFD1C326AB000FFC730;
+			remoteInfo = "FMDB iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +151,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				55B3189E1FEB666A00FD859F /* Alamofire.framework in Embed Frameworks */,
+				55B318C41FEE3E4A00FD859F /* FMDB.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +166,10 @@
 		55B318A41FEB713B00FD859F /* RequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
 		55B318A61FEB9A7B00FD859F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		55B318A81FECDF8C00FD859F /* LocalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfig.swift; sourceTree = "<group>"; };
+		55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = fmdb/fmdb.xcodeproj; sourceTree = "<group>"; };
+		55B318CA1FEE4B4400FD859F /* DoctorDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDao.swift; sourceTree = "<group>"; };
+		55B318CC1FEE4BF300FD859F /* SwiftDemo1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo1-Bridging-Header.h"; sourceTree = "<group>"; };
+		55B318EF1FEE4ED300FD859F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		55FAAB7E1FA61D5A00D2BE51 /* SwiftDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FAAB811FA61D5A00D2BE51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FAAB831FA61D5A00D2BE51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +185,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B318F01FEE4ED300FD859F /* libsqlite3.0.tbd in Frameworks */,
+				55B318CE1FEE4CF100FD859F /* libFMDB-IOS.a in Frameworks */,
 				55B3189D1FEB666A00FD859F /* Alamofire.framework in Frameworks */,
+				55B318C31FEE3E4A00FD859F /* FMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,16 +238,41 @@
 		55B318AA1FECF52300FD859F /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				55B318CA1FEE4B4400FD859F /* DoctorDao.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		55B318AC1FEE3E2900FD859F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55B318B61FEE3E2900FD859F /* fmdb */,
+				55B318B81FEE3E2900FD859F /* libFMDB.a */,
+				55B318BA1FEE3E2900FD859F /* Tests.xctest */,
+				55B318BC1FEE3E2900FD859F /* libFMDB-IOS.a */,
+				55B318BE1FEE3E2900FD859F /* FMDB.framework */,
+				55B318C01FEE3E2900FD859F /* FMDB.framework */,
+				55B318C21FEE3E2900FD859F /* FMDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55B318CD1FEE4CF100FD859F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55B318EF1FEE4ED300FD859F /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		55FAAB751FA61D5A00D2BE51 = {
 			isa = PBXGroup;
 			children = (
+				55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */,
 				55B3187E1FEA0A2200FD859F /* Alamofire.xcodeproj */,
 				55FAAB801FA61D5A00D2BE51 /* SwiftDemo1 */,
 				55FAAB7F1FA61D5A00D2BE51 /* Products */,
+				55B318CD1FEE4CF100FD859F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +299,7 @@
 				55FAAB8D1FA61D5A00D2BE51 /* Info.plist */,
 				55B318A61FEB9A7B00FD859F /* System.swift */,
 				55B318A81FECDF8C00FD859F /* LocalConfig.swift */,
+				55B318CC1FEE4BF300FD859F /* SwiftDemo1-Bridging-Header.h */,
 			);
 			path = SwiftDemo1;
 			sourceTree = "<group>";
@@ -225,6 +320,7 @@
 			);
 			dependencies = (
 				55B318A01FEB666A00FD859F /* PBXTargetDependency */,
+				55B318C61FEE3E4B00FD859F /* PBXTargetDependency */,
 			);
 			name = SwiftDemo1;
 			productName = SwiftDemo1;
@@ -262,6 +358,10 @@
 				{
 					ProductGroup = 55B3187F1FEA0A2200FD859F /* Products */;
 					ProjectRef = 55B3187E1FEA0A2200FD859F /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 55B318AC1FEE3E2900FD859F /* Products */;
+					ProjectRef = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -321,6 +421,55 @@
 			remoteRef = 55B318951FEA0A2200FD859F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		55B318B61FEE3E2900FD859F /* fmdb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fmdb;
+			remoteRef = 55B318B51FEE3E2900FD859F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55B318B81FEE3E2900FD859F /* libFMDB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMDB.a;
+			remoteRef = 55B318B71FEE3E2900FD859F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55B318BA1FEE3E2900FD859F /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 55B318B91FEE3E2900FD859F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55B318BC1FEE3E2900FD859F /* libFMDB-IOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFMDB-IOS.a";
+			remoteRef = 55B318BB1FEE3E2900FD859F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55B318BE1FEE3E2900FD859F /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 55B318BD1FEE3E2900FD859F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55B318C01FEE3E2900FD859F /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 55B318BF1FEE3E2900FD859F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55B318C21FEE3E2900FD859F /* FMDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FMDB.framework;
+			remoteRef = 55B318C11FEE3E2900FD859F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -344,6 +493,7 @@
 				55FAAB841FA61D5A00D2BE51 /* ViewController.swift in Sources */,
 				55427E9C1FD14C08001A7F81 /* Login.swift in Sources */,
 				55FAAB821FA61D5A00D2BE51 /* AppDelegate.swift in Sources */,
+				55B318CB1FEE4B4400FD859F /* DoctorDao.swift in Sources */,
 				55B318A91FECDF8C00FD859F /* LocalConfig.swift in Sources */,
 				55B318A51FEB713B00FD859F /* RequestConfig.swift in Sources */,
 				55B318A71FEB9A7B00FD859F /* System.swift in Sources */,
@@ -360,6 +510,11 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = 55B3189F1FEB666A00FD859F /* PBXContainerItemProxy */;
+		};
+		55B318C61FEE3E4B00FD859F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB iOS";
+			targetProxy = 55B318C51FEE3E4B00FD859F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -501,6 +656,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joanfen.SwiftDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SwiftDemo1/SwiftDemo1-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -517,6 +673,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joanfen.SwiftDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SwiftDemo1/SwiftDemo1-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
