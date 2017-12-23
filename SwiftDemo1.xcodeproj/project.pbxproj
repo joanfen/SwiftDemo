@@ -10,16 +10,24 @@
 		55427E9C1FD14C08001A7F81 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55427E9B1FD14C08001A7F81 /* Login.swift */; };
 		556550AA1FD0F9D7001F008D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556550A91FD0F9D7001F008D /* Animation.swift */; };
 		55B3189C1FEB640D00FD859F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B3189B1FEB640D00FD859F /* LoginRequest.swift */; };
-		55B3189D1FEB666A00FD859F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B3188A1FEA0A2200FD859F /* Alamofire.framework */; };
+		55B3189D1FEB666A00FD859F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B3188A1FEA0A2200FD859F /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		55B3189E1FEB666A00FD859F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55B3188A1FEA0A2200FD859F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55B318A51FEB713B00FD859F /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A41FEB713B00FD859F /* RequestConfig.swift */; };
 		55B318A71FEB9A7B00FD859F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A61FEB9A7B00FD859F /* System.swift */; };
 		55B318A91FECDF8C00FD859F /* LocalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A81FECDF8C00FD859F /* LocalConfig.swift */; };
-		55B318C31FEE3E4A00FD859F /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318BE1FEE3E2900FD859F /* FMDB.framework */; };
-		55B318C41FEE3E4A00FD859F /* FMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318BE1FEE3E2900FD859F /* FMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55B318CB1FEE4B4400FD859F /* DoctorDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318CA1FEE4B4400FD859F /* DoctorDao.swift */; };
-		55B318CE1FEE4CF100FD859F /* libFMDB-IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318BC1FEE3E2900FD859F /* libFMDB-IOS.a */; };
 		55B318F01FEE4ED300FD859F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318EF1FEE4ED300FD859F /* libsqlite3.0.tbd */; };
+		55B318F21FEE60AC00FD859F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318F11FEE60AC00FD859F /* File.swift */; };
+		55B318F51FEE636600FD859F /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318F41FEE636600FD859F /* Doctor.swift */; };
+		55B319B41FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319A01FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m */; };
+		55B319B51FEE8ADD00FD859F /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319A21FEE8ADD00FD859F /* FMDatabase+FTS3.m */; };
+		55B319B61FEE8ADD00FD859F /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319A41FEE8ADD00FD859F /* FMTokenizers.m */; };
+		55B319B71FEE8ADD00FD859F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319A91FEE8ADD00FD859F /* FMDatabaseQueue.m */; };
+		55B319B81FEE8ADD00FD859F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319AC1FEE8ADD00FD859F /* FMDatabaseAdditions.m */; };
+		55B319B91FEE8ADD00FD859F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319AD1FEE8ADD00FD859F /* FMDatabase.m */; };
+		55B319BA1FEE8ADD00FD859F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319B11FEE8ADD00FD859F /* FMDatabasePool.m */; };
+		55B319BB1FEE8ADD00FD859F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319B21FEE8ADD00FD859F /* FMResultSet.m */; };
+		55B319BC1FEE8ADD00FD859F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55B319B31FEE8ADD00FD859F /* Info.plist */; };
 		55FAAB821FA61D5A00D2BE51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAAB811FA61D5A00D2BE51 /* AppDelegate.swift */; };
 		55FAAB841FA61D5A00D2BE51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAAB831FA61D5A00D2BE51 /* ViewController.swift */; };
 		55FAAB871FA61D5A00D2BE51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FAAB851FA61D5A00D2BE51 /* Main.storyboard */; };
@@ -85,73 +93,16 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
-		55B318B51FEE3E2900FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
-			remoteInfo = fmdb;
-		};
-		55B318B71FEE3E2900FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EE4290EF12B42F870088BD94;
-			remoteInfo = FMDB;
-		};
-		55B318B91FEE3E2900FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BF5D041618416BB2008C5AA9;
-			remoteInfo = Tests;
-		};
-		55B318BB1FEE3E2900FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6290CBB5188FE836009790F8;
-			remoteInfo = "FMDB-IOS";
-		};
-		55B318BD1FEE3E2900FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 83C73EFE1C326AB000FFC730;
-			remoteInfo = "FMDB iOS";
-		};
-		55B318BF1FEE3E2900FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 83C73F0B1C326ADA00FFC730;
-			remoteInfo = "FMDB MacOS";
-		};
-		55B318C11FEE3E2900FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2CD2426D1FCC09CA00479FDE;
-			remoteInfo = "FMDB watchOS";
-		};
-		55B318C51FEE3E4B00FD859F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 83C73EFD1C326AB000FFC730;
-			remoteInfo = "FMDB iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		55B318A11FEB666A00FD859F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 				55B3189E1FEB666A00FD859F /* Alamofire.framework in Embed Frameworks */,
-				55B318C41FEE3E4A00FD859F /* FMDB.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,10 +117,30 @@
 		55B318A41FEB713B00FD859F /* RequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
 		55B318A61FEB9A7B00FD859F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		55B318A81FECDF8C00FD859F /* LocalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfig.swift; sourceTree = "<group>"; };
-		55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = fmdb/fmdb.xcodeproj; sourceTree = "<group>"; };
 		55B318CA1FEE4B4400FD859F /* DoctorDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDao.swift; sourceTree = "<group>"; };
 		55B318CC1FEE4BF300FD859F /* SwiftDemo1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo1-Bridging-Header.h"; sourceTree = "<group>"; };
 		55B318EF1FEE4ED300FD859F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		55B318F11FEE60AC00FD859F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		55B318F41FEE636600FD859F /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		55B3199F1FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		55B319A01FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		55B319A21FEE8ADD00FD859F /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		55B319A31FEE8ADD00FD859F /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
+		55B319A41FEE8ADD00FD859F /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
+		55B319A51FEE8ADD00FD859F /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		55B319A61FEE8ADD00FD859F /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		55B319A81FEE8ADD00FD859F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		55B319A91FEE8ADD00FD859F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		55B319AA1FEE8ADD00FD859F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		55B319AB1FEE8ADD00FD859F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		55B319AC1FEE8ADD00FD859F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		55B319AD1FEE8ADD00FD859F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		55B319AE1FEE8ADD00FD859F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		55B319AF1FEE8ADD00FD859F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		55B319B01FEE8ADD00FD859F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		55B319B11FEE8ADD00FD859F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		55B319B21FEE8ADD00FD859F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		55B319B31FEE8ADD00FD859F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55FAAB7E1FA61D5A00D2BE51 /* SwiftDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FAAB811FA61D5A00D2BE51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FAAB831FA61D5A00D2BE51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,9 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55B318F01FEE4ED300FD859F /* libsqlite3.0.tbd in Frameworks */,
-				55B318CE1FEE4CF100FD859F /* libFMDB-IOS.a in Frameworks */,
 				55B3189D1FEB666A00FD859F /* Alamofire.framework in Frameworks */,
-				55B318C31FEE3E4A00FD859F /* FMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,22 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				55B318CA1FEE4B4400FD859F /* DoctorDao.swift */,
+				55B318F41FEE636600FD859F /* Doctor.swift */,
 			);
 			path = Account;
-			sourceTree = "<group>";
-		};
-		55B318AC1FEE3E2900FD859F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				55B318B61FEE3E2900FD859F /* fmdb */,
-				55B318B81FEE3E2900FD859F /* libFMDB.a */,
-				55B318BA1FEE3E2900FD859F /* Tests.xctest */,
-				55B318BC1FEE3E2900FD859F /* libFMDB-IOS.a */,
-				55B318BE1FEE3E2900FD859F /* FMDB.framework */,
-				55B318C01FEE3E2900FD859F /* FMDB.framework */,
-				55B318C21FEE3E2900FD859F /* FMDB.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		55B318CD1FEE4CF100FD859F /* Frameworks */ = {
@@ -265,10 +221,81 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55B318F31FEE60B800FD859F /* config */ = {
+			isa = PBXGroup;
+			children = (
+				55B318A81FECDF8C00FD859F /* LocalConfig.swift */,
+				55B318A61FEB9A7B00FD859F /* System.swift */,
+				55B318F11FEE60AC00FD859F /* File.swift */,
+			);
+			name = config;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		55B3199C1FEE8ACC00FD859F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				55B3199D1FEE8ADD00FD859F /* extra */,
+				55B319A71FEE8ADD00FD859F /* fmdb */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		55B3199D1FEE8ADD00FD859F /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				55B3199E1FEE8ADD00FD859F /* InMemoryOnDiskIO */,
+				55B319A11FEE8ADD00FD859F /* fts3 */,
+			);
+			name = extra;
+			path = fmdb/src/extra;
+			sourceTree = SOURCE_ROOT;
+		};
+		55B3199E1FEE8ADD00FD859F /* InMemoryOnDiskIO */ = {
+			isa = PBXGroup;
+			children = (
+				55B3199F1FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.h */,
+				55B319A01FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = InMemoryOnDiskIO;
+			sourceTree = "<group>";
+		};
+		55B319A11FEE8ADD00FD859F /* fts3 */ = {
+			isa = PBXGroup;
+			children = (
+				55B319A21FEE8ADD00FD859F /* FMDatabase+FTS3.m */,
+				55B319A31FEE8ADD00FD859F /* FMTokenizers.h */,
+				55B319A41FEE8ADD00FD859F /* FMTokenizers.m */,
+				55B319A51FEE8ADD00FD859F /* FMDatabase+FTS3.h */,
+				55B319A61FEE8ADD00FD859F /* fts3_tokenizer.h */,
+			);
+			path = fts3;
+			sourceTree = "<group>";
+		};
+		55B319A71FEE8ADD00FD859F /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				55B319A81FEE8ADD00FD859F /* FMDatabase.h */,
+				55B319A91FEE8ADD00FD859F /* FMDatabaseQueue.m */,
+				55B319AA1FEE8ADD00FD859F /* FMResultSet.h */,
+				55B319AB1FEE8ADD00FD859F /* FMDatabasePool.h */,
+				55B319AC1FEE8ADD00FD859F /* FMDatabaseAdditions.m */,
+				55B319AD1FEE8ADD00FD859F /* FMDatabase.m */,
+				55B319AE1FEE8ADD00FD859F /* FMDatabaseQueue.h */,
+				55B319AF1FEE8ADD00FD859F /* FMDB.h */,
+				55B319B01FEE8ADD00FD859F /* FMDatabaseAdditions.h */,
+				55B319B11FEE8ADD00FD859F /* FMDatabasePool.m */,
+				55B319B21FEE8ADD00FD859F /* FMResultSet.m */,
+				55B319B31FEE8ADD00FD859F /* Info.plist */,
+			);
+			name = fmdb;
+			path = fmdb/src/fmdb;
+			sourceTree = SOURCE_ROOT;
+		};
 		55FAAB751FA61D5A00D2BE51 = {
 			isa = PBXGroup;
 			children = (
-				55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */,
+				55B3199C1FEE8ACC00FD859F /* Dependencies */,
 				55B3187E1FEA0A2200FD859F /* Alamofire.xcodeproj */,
 				55FAAB801FA61D5A00D2BE51 /* SwiftDemo1 */,
 				55FAAB7F1FA61D5A00D2BE51 /* Products */,
@@ -287,6 +314,7 @@
 		55FAAB801FA61D5A00D2BE51 /* SwiftDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				55B318F31FEE60B800FD859F /* config */,
 				55B318AA1FECF52300FD859F /* Account */,
 				55B318971FEB597E00FD859F /* Login */,
 				55FAAB811FA61D5A00D2BE51 /* AppDelegate.swift */,
@@ -297,8 +325,6 @@
 				55FAAB881FA61D5A00D2BE51 /* Assets.xcassets */,
 				55FAAB8A1FA61D5A00D2BE51 /* LaunchScreen.storyboard */,
 				55FAAB8D1FA61D5A00D2BE51 /* Info.plist */,
-				55B318A61FEB9A7B00FD859F /* System.swift */,
-				55B318A81FECDF8C00FD859F /* LocalConfig.swift */,
 				55B318CC1FEE4BF300FD859F /* SwiftDemo1-Bridging-Header.h */,
 			);
 			path = SwiftDemo1;
@@ -320,7 +346,6 @@
 			);
 			dependencies = (
 				55B318A01FEB666A00FD859F /* PBXTargetDependency */,
-				55B318C61FEE3E4B00FD859F /* PBXTargetDependency */,
 			);
 			name = SwiftDemo1;
 			productName = SwiftDemo1;
@@ -358,10 +383,6 @@
 				{
 					ProductGroup = 55B3187F1FEA0A2200FD859F /* Products */;
 					ProjectRef = 55B3187E1FEA0A2200FD859F /* Alamofire.xcodeproj */;
-				},
-				{
-					ProductGroup = 55B318AC1FEE3E2900FD859F /* Products */;
-					ProjectRef = 55B318AB1FEE3E2900FD859F /* fmdb.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -421,55 +442,6 @@
 			remoteRef = 55B318951FEA0A2200FD859F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		55B318B61FEE3E2900FD859F /* fmdb */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = fmdb;
-			remoteRef = 55B318B51FEE3E2900FD859F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		55B318B81FEE3E2900FD859F /* libFMDB.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFMDB.a;
-			remoteRef = 55B318B71FEE3E2900FD859F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		55B318BA1FEE3E2900FD859F /* Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Tests.xctest;
-			remoteRef = 55B318B91FEE3E2900FD859F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		55B318BC1FEE3E2900FD859F /* libFMDB-IOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libFMDB-IOS.a";
-			remoteRef = 55B318BB1FEE3E2900FD859F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		55B318BE1FEE3E2900FD859F /* FMDB.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FMDB.framework;
-			remoteRef = 55B318BD1FEE3E2900FD859F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		55B318C01FEE3E2900FD859F /* FMDB.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FMDB.framework;
-			remoteRef = 55B318BF1FEE3E2900FD859F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		55B318C21FEE3E2900FD859F /* FMDB.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FMDB.framework;
-			remoteRef = 55B318C11FEE3E2900FD859F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -477,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B319BC1FEE8ADD00FD859F /* Info.plist in Resources */,
 				55FAAB8C1FA61D5A00D2BE51 /* LaunchScreen.storyboard in Resources */,
 				55FAAB891FA61D5A00D2BE51 /* Assets.xcassets in Resources */,
 				55FAAB871FA61D5A00D2BE51 /* Main.storyboard in Resources */,
@@ -491,12 +464,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FAAB841FA61D5A00D2BE51 /* ViewController.swift in Sources */,
+				55B319B41FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				55B319BA1FEE8ADD00FD859F /* FMDatabasePool.m in Sources */,
 				55427E9C1FD14C08001A7F81 /* Login.swift in Sources */,
+				55B319B91FEE8ADD00FD859F /* FMDatabase.m in Sources */,
+				55B318F51FEE636600FD859F /* Doctor.swift in Sources */,
+				55B319B81FEE8ADD00FD859F /* FMDatabaseAdditions.m in Sources */,
+				55B319B61FEE8ADD00FD859F /* FMTokenizers.m in Sources */,
 				55FAAB821FA61D5A00D2BE51 /* AppDelegate.swift in Sources */,
+				55B319B51FEE8ADD00FD859F /* FMDatabase+FTS3.m in Sources */,
 				55B318CB1FEE4B4400FD859F /* DoctorDao.swift in Sources */,
 				55B318A91FECDF8C00FD859F /* LocalConfig.swift in Sources */,
+				55B319B71FEE8ADD00FD859F /* FMDatabaseQueue.m in Sources */,
 				55B318A51FEB713B00FD859F /* RequestConfig.swift in Sources */,
+				55B319BB1FEE8ADD00FD859F /* FMResultSet.m in Sources */,
 				55B318A71FEB9A7B00FD859F /* System.swift in Sources */,
+				55B318F21FEE60AC00FD859F /* File.swift in Sources */,
 				55B3189C1FEB640D00FD859F /* LoginRequest.swift in Sources */,
 				556550AA1FD0F9D7001F008D /* Animation.swift in Sources */,
 				55FAAB941FA61DA900D2BE51 /* WebHandler.swift in Sources */,
@@ -510,11 +493,6 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = 55B3189F1FEB666A00FD859F /* PBXContainerItemProxy */;
-		};
-		55B318C61FEE3E4B00FD859F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FMDB iOS";
-			targetProxy = 55B318C51FEE3E4B00FD859F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

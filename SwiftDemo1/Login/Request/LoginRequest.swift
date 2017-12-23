@@ -31,6 +31,8 @@ public class LoginRequest {
     }
     
     func handleLoginResponse(response: Dictionary<String, Any>){
+        _ = Doctor(doctor: response["doctor"] as! Dictionary<String, Any>)
+        DoctorDao.createDB()
         print(response)
     }
 }

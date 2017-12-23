@@ -19,12 +19,13 @@ let LOGINID_KEY = "XRLoginId"
 public class RequestConfig {
     class public func httpRequestHeader() -> HTTPHeaders{
         let uuid = System.createUUID()
-        let header:HTTPHeaders = [SYS_DID_KEY: uuid, SYS_APPVER_KEY: SYS_APPVER_VALUE, SYS_OS_KEY: SYS_OS_VALUE, IOS_VERSION_KEY: IOS_VERSION_VALUE, LOGINID_KEY:LocalConfig.loginIdString()]
+        var header:HTTPHeaders = [SYS_DID_KEY: uuid, SYS_APPVER_KEY: SYS_APPVER_VALUE, SYS_OS_KEY: SYS_OS_VALUE, IOS_VERSION_KEY: IOS_VERSION_VALUE]
+        if let loginId = LocalConfig.loginId() {
+            header[LOGINID_KEY] = "\(loginId)"
+        }
         return header
     }
-    
-   
-   
+
     class public func requestByUrl(url: String, parameters: Parameters, method: HTTPMethod, completionHandler: @escaping (DataResponse<Any>) -> Void){
         Alamofire.request(url, method:method, parameters: parameters, encoding: URLEncoding.default, headers: httpRequestHeader()).responseJSON(completionHandler: completionHandler)
         
