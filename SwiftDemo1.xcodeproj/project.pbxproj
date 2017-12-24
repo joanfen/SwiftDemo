@@ -13,11 +13,8 @@
 		55B3189D1FEB666A00FD859F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B3188A1FEA0A2200FD859F /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		55B3189E1FEB666A00FD859F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55B3188A1FEA0A2200FD859F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55B318A51FEB713B00FD859F /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A41FEB713B00FD859F /* RequestConfig.swift */; };
-		55B318A71FEB9A7B00FD859F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A61FEB9A7B00FD859F /* System.swift */; };
-		55B318A91FECDF8C00FD859F /* LocalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318A81FECDF8C00FD859F /* LocalConfig.swift */; };
 		55B318CB1FEE4B4400FD859F /* DoctorDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318CA1FEE4B4400FD859F /* DoctorDao.swift */; };
 		55B318F01FEE4ED300FD859F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B318EF1FEE4ED300FD859F /* libsqlite3.0.tbd */; };
-		55B318F21FEE60AC00FD859F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318F11FEE60AC00FD859F /* File.swift */; };
 		55B318F51FEE636600FD859F /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B318F41FEE636600FD859F /* Doctor.swift */; };
 		55B319B41FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319A01FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m */; };
 		55B319B51FEE8ADD00FD859F /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319A21FEE8ADD00FD859F /* FMDatabase+FTS3.m */; };
@@ -28,7 +25,10 @@
 		55B319BA1FEE8ADD00FD859F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319B11FEE8ADD00FD859F /* FMDatabasePool.m */; };
 		55B319BB1FEE8ADD00FD859F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B319B21FEE8ADD00FD859F /* FMResultSet.m */; };
 		55B319BC1FEE8ADD00FD859F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55B319B31FEE8ADD00FD859F /* Info.plist */; };
-		55B319BF1FEFA33900FD859F /* DataBaseQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B319BE1FEFA33900FD859F /* DataBaseQueue.swift */; };
+		55B319C51FEFDBCC00FD859F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B319C01FEFDBCC00FD859F /* System.swift */; };
+		55B319C61FEFDBCC00FD859F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B319C11FEFDBCC00FD859F /* File.swift */; };
+		55B319C71FEFDBCC00FD859F /* LocalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B319C21FEFDBCC00FD859F /* LocalConfig.swift */; };
+		55B319C81FEFDBCC00FD859F /* DataBaseQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B319C41FEFDBCC00FD859F /* DataBaseQueue.swift */; };
 		55FAAB821FA61D5A00D2BE51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAAB811FA61D5A00D2BE51 /* AppDelegate.swift */; };
 		55FAAB841FA61D5A00D2BE51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAAB831FA61D5A00D2BE51 /* ViewController.swift */; };
 		55FAAB871FA61D5A00D2BE51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FAAB851FA61D5A00D2BE51 /* Main.storyboard */; };
@@ -116,12 +116,9 @@
 		55B3187E1FEA0A2200FD859F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		55B3189B1FEB640D00FD859F /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		55B318A41FEB713B00FD859F /* RequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
-		55B318A61FEB9A7B00FD859F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		55B318A81FECDF8C00FD859F /* LocalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfig.swift; sourceTree = "<group>"; };
 		55B318CA1FEE4B4400FD859F /* DoctorDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDao.swift; sourceTree = "<group>"; };
 		55B318CC1FEE4BF300FD859F /* SwiftDemo1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo1-Bridging-Header.h"; sourceTree = "<group>"; };
 		55B318EF1FEE4ED300FD859F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		55B318F11FEE60AC00FD859F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		55B318F41FEE636600FD859F /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		55B3199F1FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
 		55B319A01FEE8ADD00FD859F /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
@@ -142,7 +139,10 @@
 		55B319B11FEE8ADD00FD859F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		55B319B21FEE8ADD00FD859F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		55B319B31FEE8ADD00FD859F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55B319BE1FEFA33900FD859F /* DataBaseQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseQueue.swift; sourceTree = "<group>"; };
+		55B319C01FEFDBCC00FD859F /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = System.swift; path = SwiftDemo1/config/System.swift; sourceTree = SOURCE_ROOT; };
+		55B319C11FEFDBCC00FD859F /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = SwiftDemo1/config/File.swift; sourceTree = SOURCE_ROOT; };
+		55B319C21FEFDBCC00FD859F /* LocalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalConfig.swift; path = SwiftDemo1/config/LocalConfig.swift; sourceTree = SOURCE_ROOT; };
+		55B319C41FEFDBCC00FD859F /* DataBaseQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseQueue.swift; sourceTree = "<group>"; };
 		55FAAB7E1FA61D5A00D2BE51 /* SwiftDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FAAB811FA61D5A00D2BE51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FAAB831FA61D5A00D2BE51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -226,10 +226,10 @@
 		55B318F31FEE60B800FD859F /* config */ = {
 			isa = PBXGroup;
 			children = (
-				55B319BD1FEFA2E300FD859F /* Database */,
-				55B318A81FECDF8C00FD859F /* LocalConfig.swift */,
-				55B318A61FEB9A7B00FD859F /* System.swift */,
-				55B318F11FEE60AC00FD859F /* File.swift */,
+				55B319C31FEFDBCC00FD859F /* Database */,
+				55B319C11FEFDBCC00FD859F /* File.swift */,
+				55B319C21FEFDBCC00FD859F /* LocalConfig.swift */,
+				55B319C01FEFDBCC00FD859F /* System.swift */,
 			);
 			name = config;
 			path = "New Group";
@@ -295,13 +295,14 @@
 			path = fmdb/src/fmdb;
 			sourceTree = SOURCE_ROOT;
 		};
-		55B319BD1FEFA2E300FD859F /* Database */ = {
+		55B319C31FEFDBCC00FD859F /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				55B319BE1FEFA33900FD859F /* DataBaseQueue.swift */,
+				55B319C41FEFDBCC00FD859F /* DataBaseQueue.swift */,
 			);
-			path = Database;
-			sourceTree = "<group>";
+			name = Database;
+			path = SwiftDemo1/config/Database;
+			sourceTree = SOURCE_ROOT;
 		};
 		55FAAB751FA61D5A00D2BE51 = {
 			isa = PBXGroup;
@@ -485,15 +486,15 @@
 				55FAAB821FA61D5A00D2BE51 /* AppDelegate.swift in Sources */,
 				55B319B51FEE8ADD00FD859F /* FMDatabase+FTS3.m in Sources */,
 				55B318CB1FEE4B4400FD859F /* DoctorDao.swift in Sources */,
-				55B318A91FECDF8C00FD859F /* LocalConfig.swift in Sources */,
 				55B319B71FEE8ADD00FD859F /* FMDatabaseQueue.m in Sources */,
 				55B318A51FEB713B00FD859F /* RequestConfig.swift in Sources */,
 				55B319BB1FEE8ADD00FD859F /* FMResultSet.m in Sources */,
-				55B318A71FEB9A7B00FD859F /* System.swift in Sources */,
-				55B318F21FEE60AC00FD859F /* File.swift in Sources */,
-				55B319BF1FEFA33900FD859F /* DataBaseQueue.swift in Sources */,
 				55B3189C1FEB640D00FD859F /* LoginRequest.swift in Sources */,
 				556550AA1FD0F9D7001F008D /* Animation.swift in Sources */,
+				55B319C51FEFDBCC00FD859F /* System.swift in Sources */,
+				55B319C81FEFDBCC00FD859F /* DataBaseQueue.swift in Sources */,
+				55B319C71FEFDBCC00FD859F /* LocalConfig.swift in Sources */,
+				55B319C61FEFDBCC00FD859F /* File.swift in Sources */,
 				55FAAB941FA61DA900D2BE51 /* WebHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
