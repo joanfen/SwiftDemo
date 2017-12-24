@@ -8,6 +8,7 @@
 
 import Foundation
 
+let ROOTDBNAME = "Root.sqlite"
 let DBNAME = "XRDoctor.sqlite"
 
 public class File {
@@ -16,6 +17,15 @@ public class File {
         let documentPath = document.first!
         return documentPath
     }
+    
+    class public func RootDBPath() -> String {
+        return DocumentDirectory() + "/" + ROOTDBNAME;
+    }
+    
+    class public func createRootDB(){
+        FileManager.default.createFile(atPath: File.RootDBPath(), contents: nil, attributes: nil)
+    }
+    
     class public func UserDirectory()->String{
         if let loginId = LocalConfig.loginId() {
             let user = DocumentDirectory() + "/" + loginId.description
