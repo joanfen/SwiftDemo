@@ -12,7 +12,7 @@ enum AuthCertifyStatus : Int{
     case None, Certifying, Fail, Success, Invalid
 }
 
-enum CertifyStatus{
+enum CertifyStatus : Int{
     case None, Certifying, Fail, Success, Invalid
 }
 
@@ -31,11 +31,10 @@ public class Doctor {
 
     var phone : String
     var email : String
-    var serial : Int
+    var serial : String
     var level : Int ///< 等级
 
     var title : String ///< 职称
-    var titleCode : Int
     var hospital : String
     
     var isDepartment : Bool
@@ -44,10 +43,7 @@ public class Doctor {
 
     var authCertifyStatus : AuthCertifyStatus
     var certifyStatus : CertifyStatus
-    
-    var enabled : Bool
-    var created : Int64
-    var updated : Int64
+
     var XRBind : Int
     
     var sessionKey : String
@@ -65,13 +61,11 @@ public class Doctor {
         
         self.phone = doctor["phone"] as? String ?? ""
         self.email = doctor["email"] as? String ?? ""
-        self.serial = doctor["serial"] as? Int ?? 0
+        self.serial = doctor["serial"] as? String ?? ""
 
         self.level = doctor["level"] as? Int ?? 0
 
         self.title = doctor["title"] as? String ?? ""
-        
-        self.titleCode = doctor["titleCode"] as? Int ?? 0
         
         self.hospital = doctor["hospital"] as? String ?? ""
 
@@ -82,13 +76,10 @@ public class Doctor {
 
         self.authCertifyStatus = (doctor["authCertifyStatus"] as? AuthCertifyStatus) ?? AuthCertifyStatus.None
         self.certifyStatus = (doctor["certifyStatus"] as? CertifyStatus) ?? CertifyStatus.None
-        
-        self.created = doctor["created"] as? Int64 ?? 0
-        self.enabled = doctor["enabled"] as? Bool ?? false
-        self.updated = doctor["updated"] as? Int64 ?? 0
+
         self.XRBind = doctor["XRBind"] as? Int ?? 0
         
-        self.sessionKey = doctor["session"] as? String ?? ""
+        self.sessionKey = doctor["sessionKey"] as? String ?? ""
         self.token = doctor["token"] as? String ?? ""
         
         

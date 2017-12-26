@@ -31,8 +31,17 @@ public class LoginRequest {
     }
     
     func handleLoginResponse(response: Dictionary<String, Any>){
-        _ = Doctor(doctor: response["doctor"] as! Dictionary<String, Any>)
-        DoctorDao.createMainDB()
-        print(response)
+        if var dic : Dictionary<String, Any> = response["doctor"] as? Dictionary<String, Any>{
+            dic["sessionKey"] = response["sessionKey"]
+            dic["token"] = response["token"]
+            let doctor = Doctor(doctor: dic)
+            print(dic)
+            DoctorDao.createMainDB()
+            DoctorDao.createUserTable()
+            DoctorDao.insertDoctor(doctor: doctor)
+        }
+       
+       
+
     }
 }
