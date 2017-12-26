@@ -23,7 +23,12 @@ public class File {
     }
     
     class public func createRootDB(){
-        FileManager.default.createFile(atPath: File.RootDBPath(), contents: nil, attributes: nil)
+        let path = File.RootDBPath()
+        if(!FileManager.default.fileExists(atPath: path)){
+            FileManager.default.createFile(atPath: path, contents: nil, attributes: nil)
+        }
+        print("DataBasePath: " + path)
+
     }
     
     class public func UserDirectory()->String{

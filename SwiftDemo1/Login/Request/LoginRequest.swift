@@ -36,12 +36,17 @@ public class LoginRequest {
             dic["token"] = response["token"]
             let doctor = Doctor(doctor: dic)
             print(dic)
-            DoctorDao.createMainDB()
-            DoctorDao.createUserTable()
-            DoctorDao.insertDoctor(doctor: doctor)
+            updateDoctor(doctor: doctor)
         }
        
        
 
+    }
+    
+    func updateDoctor(doctor:Doctor){
+        DoctorDao.createMainDB()
+        DoctorDao.createUserTable()
+        
+        DoctorDao.updateDoctor(doc: doctor)
     }
 }

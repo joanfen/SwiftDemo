@@ -9,17 +9,18 @@
 import Foundation
 
 enum AuthCertifyStatus : Int{
-    case None, Certifying, Fail, Success, Invalid
+    case None=0, Certifying, Fail, Success, Invalid
 }
 
 enum CertifyStatus : Int{
-    case None, Certifying, Fail, Success, Invalid
+    case None=0, Certifying, Fail, Success, Invalid
 }
 
 enum Gender : Int{
     case Unknown = -1
     case Female = 0
     case male = 1
+    
 }
 
 public class Doctor {
@@ -54,7 +55,8 @@ public class Doctor {
         LocalConfig.setLoginId(loginId: self.loginId)
 
         self.name = doctor["name"] as? String ?? ""
-        self.gender = doctor["gender"] as? Gender ?? Gender.Unknown
+        self.gender = Gender(rawValue: doctor["gender"] as? Int ?? -1)!
+        
         self.birth = doctor["birth"] as? Int64 ?? 0
 
         self.thumbnail = URL.init(string: doctor["thumbnail"] as? String ?? "")!
@@ -74,8 +76,8 @@ public class Doctor {
 
         self.expertise = doctor["expertise"] as? String ?? ""
 
-        self.authCertifyStatus = (doctor["authCertifyStatus"] as? AuthCertifyStatus) ?? AuthCertifyStatus.None
-        self.certifyStatus = (doctor["certifyStatus"] as? CertifyStatus) ?? CertifyStatus.None
+        self.authCertifyStatus = AuthCertifyStatus(rawValue: doctor["authCertifyStatus"] as? Int ?? 0) ?? AuthCertifyStatus.None
+        self.certifyStatus = CertifyStatus(rawValue: doctor["certifyStatus"] as? Int ?? 0) ?? CertifyStatus.None
 
         self.XRBind = doctor["XRBind"] as? Int ?? 0
         

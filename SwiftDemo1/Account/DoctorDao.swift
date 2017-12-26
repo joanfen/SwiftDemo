@@ -27,21 +27,33 @@ public class DoctorDao{
         if (!FileManager.default.fileExists(atPath: db)) {
             FileManager.default.createFile(atPath: db, contents: nil, attributes: nil)
         }
-        print(db)
     }
     
     class public func createUserTable(){
         
-        let createUserTable = "CREATE TABLE " + userTable + " (loginId INTEGER, name TEXT, gender INTEGER, birth INTEGER, thumbnail TEXT, phone TEXT, email TEXT, serial INTEGER, level INTEGER, title TEXT, hospital TEXT, isDepartment BOOL, department TEXT, expertise TEXT, authCertifyStatus INTEGER, certifyStatus INTEGER, XRBind INTEGER, sessionKey TEXT, token TEXT);"
-        print(createUserTable)
+        let createUserTable = "CREATE TABLE " + userTable + " (loginId INTEGER PRIMARY KEY, name TEXT, gender INTEGER, birth INTEGER, thumbnail TEXT, phone TEXT, email TEXT, serial INTEGER, level INTEGER, title TEXT, hospital TEXT, isDepartment BOOL, department TEXT, expertise TEXT, authCertifyStatus INTEGER, certifyStatus INTEGER, XRBind INTEGER, sessionKey TEXT, token TEXT);"
+        let query = "SELECT * FROM sqlite_master WHERE type='table' AND name='\(userTable)'"
         DataBaseQueue.shared.inDatabase { DB in
-            let  success = DB.executeStatements(createUserTable)
+            do {
+                let set = try DB.executeQuery(query, values: nil)
+                if(set.next()){
+                    if (set.resultDictionary?["name"] != nil){
+                        DB.close()
+                        return
+                    }
+                }
+                
+            }catch{
+                
+            }
+            let success = DB.executeStatements(createUserTable)
             print("\(success)")
+            DB.close()
         }
     }
     
     class public func queryDoctorByLoginId(loginId:Int) -> Doctor?{
-        let query = "SELECT * FROM TABLE " + userTable + " WHERE loginId = " + loginId.description
+        let query = "SELECT * FROM " + userTable + " WHERE loginId = " + loginId.description
         
         var doctorDic:Dictionary<AnyHashable, Any>?;
         DataBaseQueue.shared.inDatabase { DB in
@@ -52,8 +64,7 @@ public class DoctorDao{
                         doctorDic = doctor
                     }
                 }
-            }
-            catch{ }
+            }catch{ }
         }
         if let doc = doctorDic {
             return Doctor(doctor: doc);
@@ -62,18 +73,21 @@ public class DoctorDao{
     }
     class public func updateDoctor(doc:Doctor){
         
-        if let doctor = queryDoctorByLoginId(loginId: doc.loginId) {
-            let upate = "REPLATE INTO " + userTable + "(loginId, name, gender, birth, thumbnail, phone, email, serial, level, title, hospital, isDepartment, department, expertise, authCertifyStatus, certifyStatus, enabled, XRBind, sessionKey, token)" + "VALUES(" + doctor.valuesForDataBase()  + ") where loginId=\(doctor.loginId)"
+        if let _ = queryDoctorByLoginId(loginId: doc.loginId) {
+            let update = "REPLACE INTO " + userTable + "(loginId, name, gender, birth, thumbnail, phone, email, serial, level, title, hospital, isDepartment, department, expertise, authCertifyStatus, certifyStatus, XRBind, sessionKey, token)" + " VALUES(" + doc.valuesForDataBase()  + ")"
+            print(update)
             DataBaseQueue.shared.inDatabase { DB in
-                DB.executeStatements(upate)
+                DB.executeStatements(update)
             }
+        }
+        else{
+            insertDoctor(doctor: doc)
         }
         
     }
     class public func insertDoctor(doctor:Doctor){
         let value =  doctor.valuesForDataBase()
         let insert = "INSERT INTO " + userTable + " VALUES(" + value + ")"
-        print(insert)
         DataBaseQueue.shared.inDatabase { DB in
             DB.executeStatements(insert)
         }
